@@ -12,6 +12,7 @@ Comprehensive health analysis of GitHub pull requests across the Flutter organiz
 - **Team Metrics**: Analysis of Googlers, Robots, flutter-hackers, and Community contributions.
 - **Triage Performance**: Measurement of "Time to First Human Response" (Review Latency).
 - **Sub-team Activity**: Activity breakdown for Framework, Engine, Android, iOS, Web, etc.
+- **Repository Deep-Dives**: Per-repository analysis for the most active projects.
 
 ### [flutter-notable-changes](./flutter-notable-changes/SKILL.md)
 Automates the compilation of the weekly notable changes report for the `flutter/flutter` repository.
@@ -30,6 +31,12 @@ Drafts the "What's New in the Framework" section for Flutter release blogs.
 - **Theme Identification**: Identifies high-level themes like Material, Web, and Accessibility from commit logs.
 - **PR Verification**: Cross-references PRs with reverts/relands and ensures they are ancestors of the release tag.
 - **Narrative Focus**: Groups changes into a cohesive story rather than a simple list.
+
+### [personal-issue-closer](./personal-issue-closer/SKILL.md)
+Automates the identification and closing of outdated, stale, or resolved issues.
+- **Deep Investigation**: Analyzes the complete comment history and current codebase status.
+- **Technical Justification**: Drafts detailed closing comments using established rationale templates.
+- **Safety Protocol**: Requires explicit user approval for each issue before closing.
 
 ### [personal-issue-triage](./personal-issue-triage/SKILL.md)
 Automated issue triage for Flutter teams based on established triage standards.
@@ -85,6 +92,7 @@ These skills are automatically discovered by the Gemini CLI. You can activate th
 - `flutter-notable-changes` (Direct activation)
 - "Generate a PR health report for the last 6 months" (Task-based activation)
 - "Help me compile this week's notable changes for the Flutter repo" (Task-based activation)
+- "Find and close outdated team-framework issues" (Task-based activation)
 
 You can manage available skills using the following commands:
 - `/skills list`: See all discovered skills and their status.
