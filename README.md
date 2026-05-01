@@ -14,7 +14,7 @@ Comprehensive health analysis of GitHub pull requests across the Flutter organiz
 - **Sub-team Activity**: Activity breakdown for Framework, Engine, Android, iOS, Web, etc.
 - **Repository Deep-Dives**: Per-repository analysis for the most active projects.
 
-### [flutter-notable-changes](./flutter-notable-changes/SKILL.md)
+### [personal-flutter-notable-changes](./personal-flutter-notable-changes/SKILL.md)
 Automates the compilation of the weekly notable changes report for the `flutter/flutter` repository.
 - **Data Gathering**: Automates fetching of recent commits and PR details.
 - **Contributor Recognition**: Verifies first-time contributors to ensure proper attribution.
@@ -51,10 +51,10 @@ Automates the weekly PR triage for Flutter teams to monitor health and progress.
 - **Activity Monitoring**: Flags stale PRs or those blocked by conflicts or CI failures.
 
 ### [personal-team-weekly](./personal-team-weekly/SKILL.md)
-Generates weekly team activity reports and PR metrics for a list of GitHub usernames.
-- **Metric Gathering**: Fetches PR metrics (landed, open, involved) for a specific set of developers.
+Generates weekly team activity reports and PR metrics for a list of GitHub usernames and triage queues.
+- **Metric Gathering**: Fetches PR metrics (landed, open, involved) for developers and open PR counts for team triage queues.
 - **Impact Summaries**: Drafts concise, intent-focused summaries of each team member's weekly focus.
-- **Team-Wide Metrics**: Provides deduplicated unique PR counts to show the team's total reach.
+- **Team-Wide Metrics**: Provides deduplicated unique PR counts to show the team's total reach and triage load.
 
 ## Skills in Development
 
@@ -85,11 +85,11 @@ npx @google/gemini-cli skills install https://github.com/Piinks/flutter-skills -
 
 These skills are automatically discovered by the Gemini CLI. You can activate them in two ways:
 
-1.  **By Name**: Simply type the name of the skill (e.g., `flutter-notable-changes`) to explicitly trigger its activation.
+1.  **By Name**: Simply type the name of the skill (e.g., `personal-flutter-notable-changes`) to explicitly trigger its activation.
 2.  **By Task**: Describe the task you want to perform in your prompt. The agent will autonomously identify the relevant skill and ask for your confirmation to activate it.
 
 **Example Prompts:**
-- `flutter-notable-changes` (Direct activation)
+- `personal-flutter-notable-changes` (Direct activation)
 - "Generate a PR health report for the last 6 months" (Task-based activation)
 - "Help me compile this week's notable changes for the Flutter repo" (Task-based activation)
 - "Find and close outdated team-framework issues" (Task-based activation)
